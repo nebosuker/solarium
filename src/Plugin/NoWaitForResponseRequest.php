@@ -105,8 +105,7 @@ class NoWaitForResponseRequest extends AbstractPlugin
             }
         } catch (\Exception $exception) {
             // Throw this exception after resetting the adapter.
-        }
-        finally {
+        } finally {
             ob_end_clean();
         }
 
